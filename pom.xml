@@ -69,13 +69,26 @@
 		</dependency>
 	</dependencies>
 
-	<build>
+        <build>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
+        
+        </build>
+
+		<distributionManagement>
+	<repository> 
+	   <id>maven-releases</id>
+	   <url>http://3.89.93.137:8081/repository/maven-releases/</url> 
+	</repository> 
+	<SnapshotRepository> 
+	    <id>maven-snapshots</id>
+	    <url>http://3.89.93.137:8081/repository/maven-snapshots/</url> 
+	</snapshotRepository> 
+   </distributionManagement>
+
 
 </project>
